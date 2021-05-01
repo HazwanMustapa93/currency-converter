@@ -1,0 +1,11 @@
+<div class="top-bar-container">
+  <div class="top-bar-title" routerLink="/">Currency Converter</div>
+  <div>
+    <span title="setting" routerLink="/setting" *ngIf="showSetting">
+      <fa-icon [icon]="faCog"></fa-icon>
+    </span>
+    <span title="sign out" (click)="signOutOnClick()" *ngIf="showLogout">
+      <fa-icon [icon]="faSignOut"></fa-icon>
+    </span>
+  </div>
+</div>

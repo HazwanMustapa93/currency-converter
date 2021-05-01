@@ -1,0 +1,18 @@
+@import 'src/variables.scss';
+
+:host {
+    > div {
+        background-color: $footer-bg-color;
+        color: white;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        text-align: center;
+
+        a {
+            color: orange;
+            cursor: pointer;
+        }
+    }
+}

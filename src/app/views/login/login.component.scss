@@ -1,0 +1,101 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+    > div {
+        flex: 1;
+    }
+}
+
+.the-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: #4e4e4e;
+}
+
+.user-input-container {
+    display: flex;
+    align-items: center;
+
+    > div {
+        width: 100%;
+
+        .demo-credential {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            border: .5px solid green;
+            padding: 10px;
+            font-size: 12px;
+            color: grey;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            background-color: #f4fff8;
+
+            > div {
+                line-height: 20px;
+                &:nth-child(2n+2)::before {
+                    content: ':';
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        .error-messages {
+            background-color: #fff5f5;
+            font-size: 12px;
+            border: .5px solid red;
+            padding: 10px;
+            border-radius: 3px;
+
+            > div {
+                font-size: 12px;
+                line-height: 20px;    
+                color: #cc0a0a;
+
+                &:before {
+                    content: '*';
+                }
+            }
+        }
+    }
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 15px;
+
+    input {
+        width: 100%;
+        
+        &.has-errors {
+            color: #cc0a0a;
+            border-color: red;
+            background-color: #fff5f5;
+        }
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .primary-button {
+        width: 115px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #69a269;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+}

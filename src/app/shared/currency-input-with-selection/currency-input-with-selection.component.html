@@ -1,0 +1,22 @@
+
+<div class="auction-pickles-input-with-selection">
+  <div class="input-container">
+    <input [(ngModel)]="value" placeholder="enter your currency to convert" OnlyNumber SelectOnFocus>
+    <div class="currency-selection" (click)="togglePopupListing()">      
+      <span>{{currency}}</span>
+      <span>
+        <fa-icon [icon]="faAngleDown"></fa-icon>
+      </span>
+    </div>
+  </div>
+      
+  <div class="popup-listing" *ngIf="showingPopup">
+    <div class="backdrop" (click)="togglePopupListing()"></div>
+    <div class="listing-container">
+      <div *ngFor="let currency of currencyList" (click)="currencyOnSelect(currency.currencyAbbr)">
+        <span>{{currency.currencyAbbr}}</span>
+        <span>{{currency.currencyDesc}}</span>
+      </div>
+    </div>
+  </div>
+</div>

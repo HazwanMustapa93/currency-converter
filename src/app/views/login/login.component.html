@@ -1,0 +1,37 @@
+<div class="login-container">
+  <div class="the-title">
+    <div>Currency Converter</div>
+  </div>
+
+  <div class="user-input-container">    
+    <div [formGroup]="userForm">
+      <div class="demo-credential">
+        <div>demo username</div>
+        <div>user</div>
+        <div>demo password</div>
+        <div>user123</div>
+      </div>
+
+      <div class="input-container">
+        <input placeholder="Username" formControlName="username" name="username" [class.has-errors]="(uForm?.username?.invalid && uForm?.username?.dirty) && uForm?.username?.errors">
+      </div>
+    
+      <div class="input-container">
+        <app-password-input formControlName="password" name="password" [hasErrors]="(uForm?.password?.invalid && uForm?.password?.dirty) && uForm?.password?.errors"></app-password-input>
+      </div>
+
+      <div class="error-messages" *ngIf="errorMessages.length > 0 || ((uForm?.username?.invalid && (uForm?.username?.dirty)) && uForm?.username?.errors) || ((uForm?.password?.invalid && (uForm?.password?.dirty)) && uForm?.password?.errors)">
+        <div *ngIf="uForm?.username?.hasError('required')" class="error-username-required">Username is required.</div>
+        <div *ngIf="uForm?.username?.hasError('specialcharacter')" class="error-specialcharacter">No special characters allowed.</div>
+        <div *ngIf="uForm?.username?.hasError('alphanumeric')" class="error-alphanumeric">Only alphanumeric characters allowed.</div>
+        <div *ngIf="uForm?.username?.hasError('whitespace')" class="error-whitespace">Whitespace not allowed.</div>
+        <div *ngIf="uForm?.password?.hasError('required')" class="error-password-required">Password is required.</div>
+        <div *ngFor="let msg of errorMessages">{{msg}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <span class="primary-button" (click)="loginOnClick()">Login</span>
+  </div>
+</div>

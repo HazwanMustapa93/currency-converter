@@ -1,0 +1,11 @@
+<div class="default-layout-container">
+  <div>
+    <app-default-top-bar [showSetting]="layoutMode !== 'LOGIN'" [showLogout]="layoutMode !== 'LOGIN'"></app-default-top-bar>
+    <div [class.login-container]="layoutMode === 'LOGIN'">
+      <div class="content-container" [class.small-container]="layoutMode === 'LOGIN'">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  <app-default-footer></app-default-footer>
+</div>

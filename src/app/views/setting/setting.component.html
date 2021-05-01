@@ -1,0 +1,46 @@
+<!-- 
+  TODO
+  1. Unselected Currency List - with search input
+  2. Selected Currency List (1 < x < 10)
+-->
+<!-- <div>
+  <select (change)="currencyOnChange($event.target.value)">
+    <option *ngFor="let currency of unSelectedList" value="{{currency.currencyAbbr}}">{{currency.currencyAbbr}} - {{currency.currencyDesc}}</option>
+  </select>
+</div>
+
+<div class="selected-currencies">
+  <div *ngFor="let favCurrency of selectedList">
+    <span>{{favCurrency.currencyAbbr}} - {{favCurrency.currencyDesc}}</span>
+    <span (click)="removeOnClick(favCurrency.currencyAbbr)">x</span>
+  </div>
+</div> -->
+
+<div class="setting-container">
+  <div class="raw-list-container">
+    <div class="section-title">Select 10 of your favourite currencies</div>
+    <div class="raw-list">
+      <div *ngFor="let currency of unSelectedList" (click)="currencyOnSelect(currency.currencyAbbr)">
+        <span>{{currency.currencyAbbr}}</span>
+        <span>{{currency.currencyDesc}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="selected-list-container">
+    <div class="section-title">Selected currencies</div>
+    <div class="selected-list">
+      <div class="warning-container" *ngIf="selectedList?.length < 1">
+        Please select atleast one currency.
+      </div>
+      <div *ngFor="let favCurrency of selectedList">
+        <span>{{favCurrency.currencyAbbr}}</span>
+        <div class="currency-lhs">
+          <span>{{favCurrency.currencyDesc}}</span>
+          <span (click)="removeOnClick(favCurrency.currencyAbbr)">
+            <fa-icon [icon]="faTimes"></fa-icon>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

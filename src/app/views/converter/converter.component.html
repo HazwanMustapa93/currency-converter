@@ -1,0 +1,19 @@
+<div class="converter-container">
+  <!-- <div>Select your currency type</div>
+  <div>
+    <select (change)="currencyFromOnChange($event.target.value)">
+      <option *ngFor="let currency of currencyList" [selected]="currency.currencyAbbr === currencyFrom" [value]="currency.currencyAbbr">{{currency.currencyAbbr}} - {{currency.currencyDesc}}</option>
+    </select>
+  </div> -->
+  <div class="section">
+    <div class="section-title">From</div>
+    <app-currency-input-with-selection [ngModel]="inputValue" (input)="inputChange($event.target.value)" currency="USD" [currencyList]="currencyList" (currencyOnSelect)="currencyOnSelected($event)"></app-currency-input-with-selection>
+  </div>
+
+  <div class="section conversion-result">
+    <div class="section-title">To</div>
+    <div *ngFor="let favCurrency of selectedList" class="fav-currency">      
+      <app-currency-input currency="{{favCurrency.currencyAbbr}}" [ngModel]="favCurrency.convertedValue | number: '.2'"></app-currency-input>
+    </div>
+  </div>
+</div>
