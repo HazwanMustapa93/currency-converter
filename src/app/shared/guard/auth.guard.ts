@@ -1,7 +1,7 @@
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
-import { getCookie, getLocalStorage } from './browser-storage-functions';
+import { getCookie, getLocalStorage } from '../helpers/browser-storage-functions';
 
-import { AppConstants } from './constants';
+import { AppConstants } from '../constants/constants';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 

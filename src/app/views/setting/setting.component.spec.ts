@@ -2,14 +2,14 @@ import { CUSTOM_ELEMENTS_SCHEMA, DebugElement } from '@angular/core';
 /* tslint:disable:no-unused-variable */
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 
-import { AppConstants } from 'src/app/infras/constants';
+import { AppConstants } from 'src/app/shared/constants/constants';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { By } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { SettingComponent } from './setting.component';
 import { ToastrModule } from 'ngx-toastr';
-import { setLocalStorage } from 'src/app/infras/browser-storage-functions';
+import { setLocalStorage } from 'src/app/shared/helpers/browser-storage-functions';
 
 describe('SettingComponent', () => {
   let component: SettingComponent;

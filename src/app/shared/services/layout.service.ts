@@ -1,6 +1,6 @@
 import { EventEmitter, Injectable, Output } from '@angular/core';
 
-import { LayoutMode } from './../infras/layout-mode';
+import { LayoutMode } from '../variables/layout-mode';
 
 @Injectable({
   providedIn: 'root'

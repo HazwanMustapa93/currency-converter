@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Currency, CurrencyFav } from './../../models/currency';
-import { getSelectedList, massageSelectedList } from 'src/app/infras/app-helper';
+import { getSelectedList, massageSelectedList } from 'src/app/shared/helpers/app-helper';
 
-import { AppConstants } from 'src/app/infras/constants';
-import { AuthService } from './../../services/auth.service';
-import { CurrencyService } from './../../services/currency.service';
-import { LayoutService } from './../../services/layout.service';
+import { AppConstants } from 'src/app/shared/constants/constants';
+import { AuthService } from '../../shared/services/auth.service';
+import { CurrencyService } from '../../shared/services/currency.service';
+import { LayoutService } from '../../shared/services/layout.service';
 
 @Component({
   selector: 'app-converter',

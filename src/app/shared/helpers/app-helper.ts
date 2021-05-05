@@ -1,4 +1,4 @@
-import { Currency } from '../models/currency';
+import { Currency } from '../../models/currency';
 import { getLocalStorage } from './browser-storage-functions';
 
 /** Get saved currencies from local storage */

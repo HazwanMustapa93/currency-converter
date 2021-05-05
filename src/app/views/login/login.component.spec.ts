@@ -6,7 +6,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login.component';
-import { PasswordInputComponent } from './../../shared/password-input/password-input.component';
+import { PasswordInputComponent } from './../../components/password-input/password-input.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 describe('LoginComponent', () => {

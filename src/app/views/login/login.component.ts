@@ -1,11 +1,11 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { alphanumericOnly, noSpecialCharacter, noWhitespace } from 'src/app/infras/input-validators';
+import { alphanumericOnly, noSpecialCharacter, noWhitespace } from 'src/app/shared/validators/input-validators';
 
-import { AuthService } from './../../services/auth.service';
-import { LayoutMode } from './../../infras/layout-mode';
-import { LayoutService } from './../../services/layout.service';
+import { AuthService } from '../../shared/services/auth.service';
+import { LayoutMode } from '../../shared/variables/layout-mode';
+import { LayoutService } from '../../shared/services/layout.service';
 
 @Component({
   selector: 'app-login',

@@ -2,6 +2,7 @@ import { TestBed, async, inject } from '@angular/core/testing';
 
 import { CurrencyService } from './currency.service';
 import { HttpClientModule } from '@angular/common/http';
+
 /* tslint:disable:no-unused-variable */
 
 

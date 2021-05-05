@@ -1,8 +1,8 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
-import { LayoutMode } from './../../../infras/layout-mode';
-import { LayoutService } from './../../../services/layout.service';
+import { LayoutMode } from '../../shared/variables/layout-mode';
+import { LayoutService } from '../../shared/services/layout.service';
 
 @Component({
   selector: 'app-default-layout',

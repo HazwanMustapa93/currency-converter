@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Currency, CurrencyFav } from 'src/app/models/currency';
-import { getLocalStorage, setLocalStorage } from 'src/app/infras/browser-storage-functions';
-import { getSelectedList, massageSelectedList } from 'src/app/infras/app-helper';
+import { getLocalStorage, setLocalStorage } from 'src/app/shared/helpers/browser-storage-functions';
+import { getSelectedList, massageSelectedList } from 'src/app/shared/helpers/app-helper';
 
-import { AppConstants } from 'src/app/infras/constants';
-import { CurrencyService } from './../../services/currency.service';
-import { ERROR_MESSAGES } from './../../infras/error-message';
-import { LayoutService } from './../../services/layout.service';
+import { AppConstants } from 'src/app/shared/constants/constants';
+import { CurrencyService } from '../../shared/services/currency.service';
+import { ERROR_MESSAGES } from '../../shared/constants/error-message';
+import { LayoutService } from '../../shared/services/layout.service';
 import { ToastrService } from 'ngx-toastr';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 

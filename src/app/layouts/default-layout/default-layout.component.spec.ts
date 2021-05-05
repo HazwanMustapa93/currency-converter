@@ -1,12 +1,12 @@
 /* tslint:disable:no-unused-variable */
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 
-import { AppRoutingModule } from './../../../app-routing.module';
+import { AppRoutingModule } from '../../app-routing.module';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { DefaultFooterComponent } from './../default-footer/default-footer.component';
+import { DefaultFooterComponent } from '../default-footer/default-footer.component';
 import { DefaultLayoutComponent } from './default-layout.component';
-import { DefaultTopBarComponent } from './../default-top-bar/default-top-bar.component';
+import { DefaultTopBarComponent } from '../default-top-bar/default-top-bar.component';
 
 describe('DefaultLayoutComponent', () => {
   let component: DefaultLayoutComponent;

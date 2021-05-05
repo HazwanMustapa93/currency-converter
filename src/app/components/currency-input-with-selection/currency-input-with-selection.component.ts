@@ -1,4 +1,4 @@
-import { AbstractValueAccessor, MakeProvider } from 'src/app/infras/abstract-value-accessor';
+import { AbstractValueAccessor, MakeProvider } from 'src/app/shared/abstracts/abstract-value-accessor';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 import { Currency } from './../../models/currency';

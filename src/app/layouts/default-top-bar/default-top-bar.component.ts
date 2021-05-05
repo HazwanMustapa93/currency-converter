@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { faCog, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
-import { AuthService } from './../../../services/auth.service';
+import { AuthService } from '../../shared/services/auth.service';
 import { Router } from '@angular/router';
 
 @Component({

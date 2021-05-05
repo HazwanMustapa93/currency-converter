@@ -1,4 +1,4 @@
-import { AbstractValueAccessor, MakeProvider } from 'src/app/infras/abstract-value-accessor';
+import { AbstractValueAccessor, MakeProvider } from 'src/app/shared/abstracts/abstract-value-accessor';
 import { Component, Input, OnInit } from '@angular/core';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 

@@ -1,9 +1,9 @@
-import { getCookie, setCookie } from '../infras/browser-storage-functions';
+import { getCookie, setCookie } from '../helpers/browser-storage-functions';
 
-import { AppConstants } from './../infras/constants';
-import { ERROR_MESSAGES } from './../infras/error-message';
+import { AppConstants } from '../constants/constants';
+import { ERROR_MESSAGES } from '../constants/error-message';
 import { Injectable } from '@angular/core';
-import { ResponseResult } from './../models/response-result';
+import { ResponseResult } from '../../models/response-result';
 
 @Injectable({
   providedIn: 'root'

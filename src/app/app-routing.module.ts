@@ -1,8 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { AuthGuard } from './infras/auth.guard';
+import { AuthGuard } from './shared/guard/auth.guard';
 import { ConverterComponent } from './views/converter/converter.component';
-import { DefaultLayoutComponent } from './views/layout/default-layout/default-layout.component';
+import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.component';
 import { LoginComponent } from './views/login/login.component';
 import { NgModule } from '@angular/core';
 import { SettingComponent } from './views/setting/setting.component';

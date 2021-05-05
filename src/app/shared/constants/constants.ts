@@ -1,4 +1,4 @@
-import { Currency } from './../models/currency';
+import { Currency } from '../../models/currency';
 export class AppConstants {
     static favLsKey = 'fav';
     static loggedInCookieName = 'isloggedin';

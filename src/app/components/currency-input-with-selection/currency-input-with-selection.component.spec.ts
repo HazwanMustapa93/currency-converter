@@ -6,8 +6,8 @@ import { By } from '@angular/platform-browser';
 import { CurrencyInputWithSelectionComponent } from './currency-input-with-selection.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
-import { OnlyNumberDirective } from './../../infras/only-number.directive';
-import { SelectOnFocusDirective } from './../../infras/select-on-focus.directive';
+import { OnlyNumberDirective } from '../../shared/directive/only-number.directive';
+import { SelectOnFocusDirective } from '../../shared/directive/select-on-focus.directive';
 
 describe('CurrencyInputWithSelectionComponent', () => {
   let component: CurrencyInputWithSelectionComponent;
